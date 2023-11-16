@@ -2,6 +2,7 @@
 
 1. [What is Spark? Why Python?](#schema1)
 2. [Databricks Setup](#schema2)
+3. [Primera ejecución en Databricks](#schema3)
 
 <hr>
 
@@ -76,3 +77,24 @@
 ## 2. Databricks Setup
 
 https://databricks.com/try-databricks
+
+Y usar la Comunity Edition y seguir los pasos.
+
+<hr>
+
+<a name="schema3"></a>
+## 3. Primera ejecución en Databricks
+
+```
+import pyspark
+df = sqlContext.sql('SELECT * FROM mytable')
+
+df.show() # similar al print()
+
+```
+
+![databricks](./img/data_b_1.png)
+
+
+
+
